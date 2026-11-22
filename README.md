@@ -2,7 +2,7 @@
 
 Desenvolvimento Web III | Fatec Franco da Rocha
 
-**Aluno(a):** NOME COMPLETO — RA: 0000000000
+Victoria Fernandes do Nascimento   3ª DSM
 
 O front-end funciona como **SPA**: existe só um `index.html`, e o JavaScript troca o conteúdo da `<div id="app">`.
 Ainda não existe servidor. Os dados ficam em memória e desaparecem ao atualizar a página.
