@@ -1,0 +1,55 @@
+/* ======================================================================
+   ESTILOS PRÓPRIOS DO HELPDESK WEB
+   ====================================================================== */
+
+/* ----------------------------------------------------------------------
+   EFEITO DE PISCAR (criado com CSS, sem biblioteca).
+   @keyframes define os "quadros" da animação:
+   - em 0% e 100% a badge está totalmente visível;
+   - em 50% ela fica quase transparente.
+   ---------------------------------------------------------------------- */
+@keyframes piscar {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+/* Classe aplicada na badge de prioridade Alta.
+   animation: nome | duração | repetição infinita. */
+.piscar {
+    animation: piscar 1s infinite;
+}
+
+/* Badge de prioridade Média em laranja (Bootstrap não tem "orange" pronto). */
+.bg-laranja {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+/* Badges um pouco maiores e em caixa alta para leitura fácil. */
+.badge-prioridade,
+.badge-status {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    padding: 0.45em 0.7em;
+}
+
+.badge-prioridade {
+    text-transform: uppercase;
+}
+
+/* Cards do Dashboard com uma faixa colorida à esquerda. */
+.card-indicador {
+    border-left: 6px solid var(--cor-indicador, #6c757d);
+}
+
+/* Bloco que destaca a solução do chamado. */
+.solucao {
+    white-space: pre-wrap;
+    border-left: 4px solid #198754;
+}
